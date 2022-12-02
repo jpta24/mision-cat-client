@@ -1,0 +1,25 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "~bootstrap/scss/bootstrap";
+
+// Create your own map
+$custom-colors: (
+  "f-primary": #900,
+  "f-secondary": green
+);
+
+.navbar a:hover {
+  border-bottom: 3px solid green;
+}
+.navbar a {
+  border-bottom: 3px solid white;
+}
+.navbar .avisos {
+  border-bottom: none;
+}
+
+.navbar .avisos:hover {
+  border-bottom:none;
+}
+
