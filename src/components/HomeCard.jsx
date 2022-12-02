@@ -4,7 +4,7 @@ const HomeCard = ({card}) => {
   return (
     <Card className='col-3 mx-4 my-2'>
    
-        <Card.Img variant="top" src={card.src} style={{width: "fit-content", height: "200px"}} className='mx-auto'/>
+        <Card.Img variant="top" src={card.src} style={{maxWidth: "-webkit-fill-available", height: "200px", width: "fit-content"}} className='mx-auto'/>
     
        
       <Card.Body>
