@@ -40,7 +40,7 @@ const handleClose = () => setShow(false);
                     <Nav.Link className='mx-2' href="#">Actualidad</Nav.Link>
                     <Nav.Link className='mx-2' href="#">Galeria</Nav.Link>
                     <Nav.Link className='mx-2' href="#">Blog Juvenil</Nav.Link>
-                    <Nav.Link className='mx-2' href="#">Contactos</Nav.Link>
+                    <Nav.Link className='mx-2' href="#footer">Contactos</Nav.Link>
                     <Button variant='success' className='mx-2 avisos col-2' onClick={()=>setShow(true)}>Avisos</Button>
                 </Nav>
             </Navbar.Collapse>

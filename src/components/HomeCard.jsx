@@ -1,8 +1,21 @@
-import React from 'react'
+import {Button,Card} from 'react-bootstrap';
 
-const HomeCard = () => {
+const HomeCard = ({card}) => {
   return (
-    <div>HomeCard</div>
+    <Card className='col-3 mx-4 my-2'>
+   
+        <Card.Img variant="top" src={card.src} style={{width: "fit-content", height: "200px"}} className='mx-auto'/>
+    
+       
+      <Card.Body>
+        <Card.Title>{card.title}</Card.Title>
+        <Card.Text>
+          {card.text}
+        </Card.Text>
+        {card.link && <Button className='col-4' variant="success" href={card.link}>Ver más</Button>}
+        
+      </Card.Body>
+    </Card>
   )
 }
 
