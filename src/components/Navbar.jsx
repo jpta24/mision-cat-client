@@ -8,43 +8,142 @@ const handleClose = () => setShow(false);
 
     return (
         <>
-        <Navbar className='col-12 mx-auto px-5' variant="light" bg='white' expand="sm" collapseOnSelect>
-            <Navbar.Brand className='mx-5'>
-                <img src='logo.png' width="150px" alt='altLogo'/>
-            </Navbar.Brand>
-            <Navbar.Toggle className="coloring" />
-            <Navbar.Collapse className='d-flex flex-column' >
+        <Navbar className='col-md-12 mx-md-auto px-md-5' sticky="top" bg='white' expand="sm" collapseOnSelect>
+        <Navbar.Brand className='mx-md-5 text-center'>
+        {window.innerWidth < 450 ? 
+        <>
+            <img className='mx-3' src='virgenDelPilar.png' width="60px"  alt='altLogo'/>
+            <span className="text-primary"> Misión Católica en Berlín</span>
+        </>     
+        :
+            <img src='virgenDelPilar.png' width="100px"  alt='altLogo'/>
+        }
+        </Navbar.Brand>
+
+        <Navbar.Toggle className="coloring" />
+        <Navbar.Collapse className='d-flex-lg justify-content-between flex-column '>
+            {window.innerWidth > 450 && 
                 <div>
-                    <h1 className='text-success'>Misión Católica de Lengua Española en Berlín</h1>
+                    <h1 className='text-primary'>Misión Católica de Lengua Española en Berlín</h1>
                 </div>
-                <Nav className='d-flex justify-content-around mb-1 col-12'>
-                    <Nav.Link className='mx-2' href="/">Inicio</Nav.Link>
-                    <Nav.Link className='mx-2' href="#">Nuestra Misión</Nav.Link>
-                    <NavDropdown title="Servicios" id="navbarScrollingDropdown">
-                        <NavDropdown.Item href="#action3">
-                            Servicios Pastorales
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">
-                            Servicios Litúrgicos
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">
-                            Consejo Pastoral
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">
-                            Grupos de Liturgia
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action4">
-                            Otros
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                    <Nav.Link className='mx-2' href="#">Actualidad</Nav.Link>
-                    <Nav.Link className='mx-2' href="#">Galeria</Nav.Link>
-                    <Nav.Link className='mx-2' href="#">Blog Juvenil</Nav.Link>
-                    <Nav.Link className='mx-2' href="#footer">Contactos</Nav.Link>
-                    <Button variant='success' className='mx-2 avisos col-2' onClick={()=>setShow(true)}>Avisos</Button>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+            }
+                
+            <Nav className='d-flex justify-content-around mb-1 col-12'>
+                <NavDropdown  className='mx-2' title="Nosotros">
+                    <NavDropdown.Item href="#action3">
+                        La Misión
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Parróquia San Nikolaus
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Historia
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Sacerdotes
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Organigrama
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Proyectos
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Eventos
+                    </NavDropdown.Item><NavDropdown.Item href="#action4">
+                        Jóvenes
+                    </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown  className='mx-2' title="Misas">
+                    <NavDropdown.Item href="#action3">
+                        Dominicales
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Vespertinas
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Días Festivos
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Intenciones de la Sta. Misa
+                    </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown  className='mx-2' title="Sacramentos">
+                    <NavDropdown.Item href="#action3">
+                        Bautizo
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Comunión
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Confirmación
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Matrimonio
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Unción de los Enfermos
+                    </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown  className='mx-2' title="Pastoral">
+                    <NavDropdown.Item href="#action3">
+                        Consejo Pastoral
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Lectores
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Monaguillos
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Catequistas
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Coro
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Grupo Técnico
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Grupo de Cocina
+                    </NavDropdown.Item><NavDropdown.Item href="#action4">
+                        Otros Gremios
+                    </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown  className='mx-2' title="Asociación AMCLEB">
+                    <NavDropdown.Item href="#action3">
+                        Estatutos
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Proyectos
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Talleres
+                    </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown  className='mx-2' title="Contactos">
+                    <NavDropdown.Item href="#action3">
+                        Párroco
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Horarios de Oficina
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        La Delegación
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Donaciones
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                        Subscripción
+                    </NavDropdown.Item>
+                </NavDropdown>
+                    <Button variant='primary' className='mx-2 avisos col-md-2 col-5 mx-auto' onClick={()=>setShow(true)}>Avisos</Button>
+            </Nav>
+        </Navbar.Collapse>
+
+    </Navbar>
+        
         <Modal
             show={show}
             onHide={handleClose}
