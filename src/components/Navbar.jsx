@@ -12,7 +12,7 @@ const handleClose = () => setShow(false);
         <Navbar.Brand className='mx-md-5 text-center'>
         {window.innerWidth < 450 ? 
         <>
-            <img className='mx-3' src='virgenDelPilar.png' width="60px"  alt='altLogo'/>
+            <img className='mx-2' src='virgenDelPilar.png' width="60px"  alt='altLogo'/>
             <span className="text-primary"> Misión Católica en Berlín</span>
         </>     
         :
