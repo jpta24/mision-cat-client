@@ -29,112 +29,114 @@ const handleClose = () => setShow(false);
             }
                 
             <Nav className='d-flex justify-content-around mb-1 col-12'>
-                <NavDropdown  className='mx-2' title="Nosotros">
-                    <NavDropdown.Item href="#action3">
+                <NavDropdown  className='mx-2 fw-bold dropItem' title="NOSOTROS">
+                    <NavDropdown.Item href="#action3" className='drop1'>
                         La Misión
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4"  className='dropOdd'>
                         Parróquia San Nikolaus
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Historia
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Sacerdotes
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Organigrama
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Proyectos
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Eventos
-                    </NavDropdown.Item><NavDropdown.Item href="#action4">
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Jóvenes
                     </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown  className='mx-2' title="Misas">
-                    <NavDropdown.Item href="#action3">
+                <NavDropdown  className='mx-2 fw-bold dropItem' title="MISAS">
+                    <NavDropdown.Item href="#action3" className='drop1'>
                         Dominicales
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Vespertinas
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Días Festivos
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Intenciones de la Sta. Misa
                     </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown  className='mx-2' title="Sacramentos">
-                    <NavDropdown.Item href="#action3">
+                <NavDropdown  className='mx-2 fw-bold dropItem' title="SACRAMENTOS">
+                    <NavDropdown.Item href="#action3" className='drop1'>
                         Bautizo
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Comunión
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Confirmación
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Matrimonio
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Unción de los Enfermos
                     </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown  className='mx-2' title="Pastoral">
-                    <NavDropdown.Item href="#action3">
+                <NavDropdown  className='mx-2 fw-bold dropItem' title="PASTORAL">
+                    <NavDropdown.Item href="#action3" className='drop1'>
                         Consejo Pastoral
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Lectores
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Monaguillos
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Catequistas
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Coro
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Grupo Técnico
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Grupo de Cocina
-                    </NavDropdown.Item><NavDropdown.Item href="#action4">
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Otros Gremios
                     </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown  className='mx-2' title="Asociación AMCLEB">
-                    <NavDropdown.Item href="#action3">
+                <NavDropdown  className='mx-2 fw-bold dropItem' title="ASOCIACIÓN AMCLEB">
+                    <NavDropdown.Item href="#action3" className='drop1'>
                         Estatutos
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Proyectos
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Talleres
                     </NavDropdown.Item>
                 </NavDropdown>
-                <NavDropdown  className='mx-2' title="Contactos">
-                    <NavDropdown.Item href="#action3">
+                <NavDropdown  className='mx-2 fw-bold' title="CONTACTOS">
+                    <NavDropdown.Item href="#action3" className='drop1'>
                         Párroco
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Horarios de Oficina
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         La Delegación
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropOdd'>
                         Donaciones
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="#action4" className='dropEven'>
                         Subscripción
                     </NavDropdown.Item>
                 </NavDropdown>

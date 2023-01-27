@@ -10,7 +10,13 @@ const HomePage = () => {
     
   return (
     <div>
-        <HomeCarrousel/>
+        <div className="position-relative">
+          <div className="textCont position-absolute start-50 translate-middle p-1">
+            <h1 className='imgText'>"60 años Caminando Juntos"</h1>
+          </div>
+          <HomeCarrousel/>
+        </div>
+        
         <div className="d-flex flex-wrap justify-content-center">
             {cards.sort((a,b)=>a.position-b.position).map(card=><HomeCard key={uuidv4()} card={card}/>)}
         </div>

@@ -11,7 +11,7 @@ $custom-colors: (
 );
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif !important;
 }
 
 .navbar a:hover {
@@ -26,5 +26,34 @@ body {
 
 .navbar .avisos:hover {
   border-bottom:none;
+}
+
+.drop1 {
+  background-color: #5B9BD5 !important;
+}
+
+.dropOdd {
+  background-color: #D2DEEF !important;
+}
+
+.dropEven {
+  background-color: #EAEFF7 !important;
+}
+
+.imgText {
+  z-index: 2;
+  color: #1303fd;
+  font-style: italic;
+  text-shadow: 0 0 20px whitesmoke;
+  font-size: 45px;
+  -webkit-text-stroke: 0.01px #414e7c;
+  font-weight: bold;
+}
+
+.textCont {
+  top: 85% !important;
+    z-index: 2;
+    background-color: rgb(237 98 98 / 40%);
+    box-shadow: 0 0 15px rgb(237 98 98 / 77%);
 }
 
