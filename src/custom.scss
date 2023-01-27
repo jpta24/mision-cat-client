@@ -57,3 +57,21 @@ body {
     box-shadow: 0 0 15px rgb(237 98 98 / 77%);
 }
 
+.imgTextMob {
+  z-index: 2;
+  color: #1303fd;
+  font-style: italic;
+  text-shadow: 0 0 20px whitesmoke;
+  font-size: 30px;
+  -webkit-text-stroke: 0.01px #414e7c;
+  font-weight: bold;
+}
+
+.textContMob {
+  top: 75% !important;
+    z-index: 2;
+    background-color: rgb(237 98 98 / 40%);
+    box-shadow: 0 0 15px rgb(237 98 98 / 77%);
+    width: 75%;
+}
+

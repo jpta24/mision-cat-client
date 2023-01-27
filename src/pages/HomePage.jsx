@@ -11,8 +11,10 @@ const HomePage = () => {
   return (
     <div>
         <div className="position-relative">
-          <div className="textCont position-absolute start-50 translate-middle p-1">
-            <h1 className='imgText'>"60 años Caminando Juntos"</h1>
+
+        
+          <div className={window.innerWidth < 450 ?'textContMob position-absolute start-50 translate-middle p-1' : 'textCont position-absolute start-50 translate-middle p-1' }>
+            <h1 className={window.innerWidth < 450 ? 'imgTextMob' : 'imgText'}>"60 años Caminando Juntos"</h1>
           </div>
           <HomeCarrousel/>
         </div>
