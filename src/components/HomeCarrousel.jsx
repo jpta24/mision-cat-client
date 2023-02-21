@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const HomeCarrousel = () => {
   return (
-  <Carousel fade className='col-12 col-md-8 mx-auto mb-4'>
+  <Carousel indicators={window.innerWidth < 450 ? false : true } fade className='col-12 mx-auto mb-4'>
     <Carousel.Item>
       <img
         className="d-block w-100"

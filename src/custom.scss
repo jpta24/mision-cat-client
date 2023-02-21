@@ -44,10 +44,11 @@ body {
   z-index: 2;
   color: #1303fd;
   font-style: italic;
-  text-shadow: 0 0 20px whitesmoke;
+  // text-shadow: 0 0 20px whitesmoke;
   font-size: 45px;
   -webkit-text-stroke: 0.01px #414e7c;
   font-weight: bold;
+  padding-top: 100px;
 }
 
 .textCont {
@@ -61,10 +62,11 @@ body {
   z-index: 2;
   color: #1303fd;
   font-style: italic;
-  text-shadow: 0 0 20px whitesmoke;
-  font-size: 30px;
+  // text-shadow: 0 0 20px whitesmoke;
+  font-size: 25px;
   -webkit-text-stroke: 0.01px #414e7c;
   font-weight: bold;
+  padding-top: 35px;
 }
 
 .textContMob {
@@ -73,5 +75,24 @@ body {
     background-color: rgb(237 98 98 / 40%);
     box-shadow: 0 0 15px rgb(237 98 98 / 77%);
     width: 75%;
+}
+
+.grad-bg {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 185px;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  z-index: 2;
+}
+.grad-bg-mob {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  z-index: 2
 }
 

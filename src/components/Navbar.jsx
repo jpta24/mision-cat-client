@@ -56,16 +56,16 @@ const handleClose = () => setShow(false);
                     </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown  className='mx-2 fw-bold dropItem' title="MISAS">
-                    <NavDropdown.Item href="#action3" className='drop1'>
+                    <NavDropdown.Item href="/misas/#dominicales" className='drop1'>
                         Dominicales
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropOdd'>
+                    <NavDropdown.Item href="/misas/#vespertinas" className='dropOdd'>
                         Vespertinas
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropEven'>
+                    <NavDropdown.Item href="/misas/#diasfestivos" className='dropEven'>
                         Días Festivos
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropOdd'>
+                    <NavDropdown.Item href="/misas/#intenciones" className='dropOdd'>
                         Intenciones de la Sta. Misa
                     </NavDropdown.Item>
                 </NavDropdown>

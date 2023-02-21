@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 
 
 import HomePage from "./pages/HomePage";
+import Misas from "./pages/Misas";
 // import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 
@@ -16,6 +17,7 @@ function App() {
       
       <Routes>
         <Route  path="/" element={<HomePage />} />
+        <Route  path="/misas" element={<Misas />} />
         {/* <Route path="*" element={<NotFoundPage />} /> */}
       </Routes> 
       
