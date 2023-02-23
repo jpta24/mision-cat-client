@@ -96,3 +96,35 @@ body {
   z-index: 2
 }
 
+.navbarTrans {
+  visibility: visible;
+  opacity: 1;
+  height: fit-content;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -webkit-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out,height 0.3s ease-in-out;
+  -moz-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -ms-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  -o-transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbarTransCollapse {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  display: none;
+}
+
+.navImg {
+  width: 100px;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+  -ms-transition: width 0.3s ease;
+  -o-transition: width 0.3s ease;
+} 
+
+.imgSmall {
+  width:60px
+}
+
+

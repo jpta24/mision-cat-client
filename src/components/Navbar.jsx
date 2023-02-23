@@ -1,22 +1,50 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { Button, Nav, Navbar, NavDropdown, Modal } from 'react-bootstrap'
 
 const Navbar2 = () => {
 
-const [show, setShow] = useState(false)
-const handleClose = () => setShow(false);
+    const [show, setShow] = useState(false)
+    const handleClose = () => setShow(false);
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isHovered, setIsHovered] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        setScrollPosition(window.pageYOffset);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+        window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
+    const dNav = () =>{
+        if (scrollPosition > 50 && !isHovered) {
+            return 'navbarTrans navbarTransCollapse'
+        }
+        return 'navbarTrans'
+    }
+
+    console.log(window.innerWidth);
     return (
-        <>
-        <Navbar className='col-md-12 mx-md-auto px-md-5' sticky="top" bg='white' expand="sm" collapseOnSelect>
+    <>
+    <Navbar className='col-md-12 mx-md-auto px-md-5' sticky="top" bg='white' expand="sm" collapseOnSelect 
+    onMouseOver={()=>setIsHovered(true)}
+    onMouseOut={()=>setIsHovered(false)}>
         <Navbar.Brand className='mx-md-5 text-center'>
         {window.innerWidth < 450 ? 
         <>
-            <img className='mx-2' src='virgenDelPilar.png' width="60px"  alt='altLogo'/>
+            <img className='mx-2' src='https://res.cloudinary.com/dwtnqtdcs/image/upload/v1677147805/virgenDelPilar_fs1a8w.png' width="60px"  alt='altLogo'/>
             <span className="text-primary"> Misión Católica en Berlín</span>
         </>     
         :
-            <img src='virgenDelPilar.png' width="100px"  alt='altLogo'/>
+            <img src='https://res.cloudinary.com/dwtnqtdcs/image/upload/v1677147805/virgenDelPilar_fs1a8w.png' 
+            className={`${window.innerWidth > 450 && 'navImg'} ${(scrollPosition > 50 && !isHovered) && "imgSmall"}`} 
+            // width={scrollPosition > 50 && !isHovered ? "60px" :"100px"}  
+            alt='altLogo'/>
         }
         </Navbar.Brand>
 
@@ -28,7 +56,7 @@ const handleClose = () => setShow(false);
                 </div>
             }
                 
-            <Nav className='d-flex justify-content-around mb-1 col-12'>
+            <Nav className={`d-flex justify-content-around mb-1 col-12 ${dNav()}`}>
                 <NavDropdown  className='mx-2 fw-bold dropItem' title="NOSOTROS">
                     <NavDropdown.Item href="#action3" className='drop1'>
                         La Misión
@@ -70,19 +98,19 @@ const handleClose = () => setShow(false);
                     </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown  className='mx-2 fw-bold dropItem' title="SACRAMENTOS">
-                    <NavDropdown.Item href="#action3" className='drop1'>
+                    <NavDropdown.Item href="/sacramentos/#bautizo" className='drop1'>
                         Bautizo
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropOdd'>
+                    <NavDropdown.Item href="/sacramentos/#comunion" className='dropOdd'>
                         Comunión
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropEven'>
+                    <NavDropdown.Item href="/sacramentos/#confirmacion" className='dropEven'>
                         Confirmación
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropOdd'>
+                    <NavDropdown.Item href="/sacramentos/#matrimonio" className='dropOdd'>
                         Matrimonio
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropEven'>
+                    <NavDropdown.Item href="/sacramentos/#uncion" className='dropEven'>
                         Unción de los Enfermos
                     </NavDropdown.Item>
                 </NavDropdown>
@@ -143,7 +171,6 @@ const handleClose = () => setShow(false);
                     <Button variant='primary' className='mx-2 avisos col-md-2 col-5 mx-auto' onClick={()=>setShow(true)}>Avisos</Button>
             </Nav>
         </Navbar.Collapse>
-
     </Navbar>
         
         <Modal

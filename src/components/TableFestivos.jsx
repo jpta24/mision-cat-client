@@ -2,7 +2,7 @@ import React from 'react'
 
 function TableFestivos() {
   return (
-    <table className='text-start mx-auto'>
+    <table className='text-start mx-auto h5'>
         <thead>
             <tr className='drop1 border border-dark text-center'>
                 <th >Fecha en 2023</th>
