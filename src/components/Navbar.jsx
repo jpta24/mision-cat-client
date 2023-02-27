@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react';
 import { Button, Nav, Navbar, NavDropdown, Modal } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 const Navbar2 = () => {
 
@@ -27,24 +28,25 @@ const Navbar2 = () => {
         }
         return 'navbarTrans'
     }
-
-    console.log(window.innerWidth);
     return (
     <>
     <Navbar className='col-md-12 mx-md-auto px-md-5' sticky="top" bg='white' expand="sm" collapseOnSelect 
     onMouseOver={()=>setIsHovered(true)}
     onMouseOut={()=>setIsHovered(false)}>
-        <Navbar.Brand className='mx-md-5 text-center'>
+        <Navbar.Brand  className='mx-md-5 text-center'>
         {window.innerWidth < 450 ? 
-        <>
+        <Link to={"/"}>
             <img className='mx-2' src='https://res.cloudinary.com/dwtnqtdcs/image/upload/v1677147805/virgenDelPilar_fs1a8w.png' width="60px"  alt='altLogo'/>
             <span className="text-primary"> Misión Católica en Berlín</span>
-        </>     
+        </Link>     
         :
+        <Link to={"/"}>
             <img src='https://res.cloudinary.com/dwtnqtdcs/image/upload/v1677147805/virgenDelPilar_fs1a8w.png' 
             className={`${window.innerWidth > 450 && 'navImg'} ${(scrollPosition > 50 && !isHovered) && "imgSmall"}`} 
             // width={scrollPosition > 50 && !isHovered ? "60px" :"100px"}  
             alt='altLogo'/>
+        </Link>
+            
         }
         </Navbar.Brand>
 
