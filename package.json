@@ -22,7 +22,8 @@
     "postbuild": "react-snap"
   },
   "reactSnap": {
-    "inlineCss": true
+    "inlineCss": true,
+    "include": ["/sacramentos", "/misas"]
   },
   "eslintConfig": {
     "extends": [

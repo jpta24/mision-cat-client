@@ -60,7 +60,7 @@ function Sacramentos() {
                 </div>
             </div>
             <div className='d-flex flex-column text-start m-5 col-8 mx-auto h5'>
-                <p>Véase Formulario de inscripción a la catequesis de la primera comunión. <a href="primera comunion formulario de inscripción 2024.pdf" target="_blank">(Abrir documento PDF)</a></p>
+                <p>Véase Formulario de inscripción a la catequesis de la primera comunión. <a href="primera-comunion-formulario.pdf" target="_blank">(Abrir documento PDF)</a></p>
                 <h3 className='text-center text-primary'>Requisitos:</h3>
                 <h5>NIÑO / NIÑA</h5>
                 <ul>
@@ -80,7 +80,7 @@ function Sacramentos() {
                 </div>
             </div>
             <div className='d-flex flex-column text-start m-5 col-8 mx-auto h5'>
-                <p>Véase Formulario de inscripción a la catequesis de la Confirmación. <a href="Formulario-Inscripción -JÓVENES-Confirmación.pdf" target="_blank">(Abrir documento PDF)</a></p>
+                <p>Véase Formulario de inscripción a la catequesis de la Confirmación. <a href="confirmacion-jovenes-fomulario.pdf" target="_blank">(Abrir documento PDF)</a></p>
                 <h3 className='text-center text-primary'>Requisitos:</h3>
                 {/* <h5>NIÑO / NIÑA</h5>
                 <ul>
@@ -100,13 +100,13 @@ function Sacramentos() {
                 </div>
             </div>
             <div className='d-flex flex-column text-start m-5 col-8 mx-auto h5'>
-                {/* <p>Véase Formulario de inscripción a la catequesis de la Confirmación. <a href="Formulario-Inscripción -JÓVENES-Confirmación.pdf" target="_blank">(Abrir documento PDF)</a></p> */}
+                {/* <p>Véase Formulario de inscripción a la catequesis de la Confirmación. <a href="confirmacion-jovenes-fomulario.pdf" target="_blank">(Abrir documento PDF)</a></p> */}
                 <h3 className='text-center text-primary'>Requisitos:</h3>
                 {/* <h5>NIÑO / NIÑA</h5>*/}
                 <ul>
                     <li>Fe de bautismo de cada contrayentes con las anotaciones del margen de página del libro de bautizo del lugar donde fue bautizadoCatequesis para los contrayentes.</li>
                     <li>Catequesis para los contrayentes.</li>
-                </ul> 
+                </ul>
             </div>
         </div>
         <hr/>
@@ -121,7 +121,7 @@ function Sacramentos() {
                 </div>
             </div>
             <div className='d-flex flex-column text-start m-5 col-8 mx-auto h5'>
-                {/* <p>Véase Formulario de inscripción a la catequesis de la Confirmación. <a href="Formulario-Inscripción -JÓVENES-Confirmación.pdf" target="_blank">(Abrir documento PDF)</a></p> */}
+                {/* <p>Véase Formulario de inscripción a la catequesis de la Confirmación. <a href="confirmacion-jovenes-fomulario.pdf" target="_blank">(Abrir documento PDF)</a></p> */}
                 {/* <h3 className='text-center text-primary'>Requisitos:</h3>
                 <h5>NIÑO / NIÑA</h5>
                 <ul>
@@ -133,11 +133,11 @@ function Sacramentos() {
                     <li>Párroco: Franklin Zea</li>
                     <li>E-Mail:parroco@mision-catolica-berlin.de</li>
                     <li>Móvil: +49 (0)176 31 332 817</li>
-                </ul> 
+                </ul>
             </div>
         </div>
         <HomeFooter/>
-        
+
     </div>
   )
 }
