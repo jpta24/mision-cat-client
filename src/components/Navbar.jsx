@@ -60,29 +60,29 @@ const Navbar2 = () => {
                 
             <Nav className={`d-flex justify-content-around mb-1 col-12 ${dNav()}`}>
                 <NavDropdown  className='mx-2 fw-bold dropItem' title="NOSOTROS">
-                    <NavDropdown.Item href="#action3" className='drop1'>
+                    <NavDropdown.Item href="/nosotros/#bienvenida" className='drop1'>
+                        Bienvenida
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/nosotros/#mision"  className='dropOdd'>
                         La Misión
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4"  className='dropOdd'>
-                        Parróquia San Nikolaus
+                    <NavDropdown.Item href="/nosotros/#laFe" className='dropEven'>
+                        Espacio de la Fé
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropEven'>
+                    <NavDropdown.Item href="/nosotros/#historia" className='dropOdd'>
                         Historia
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropOdd'>
-                        Sacerdotes
+                    <NavDropdown.Item href="/nosotros/#sacerdotes" className='dropEven'>
+                        Sacerdotes 
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropEven'>
-                        Organigrama
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropOdd'>
-                        Proyectos
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropEven'>
+                    <NavDropdown.Item href="/nosotros/#eventos" className='dropOdd'>
                         Eventos
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className='dropOdd'>
-                        Jóvenes
+                    <NavDropdown.Item href="/nosotros/#proyectos" className='dropEven'>
+                        Proyectos
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/nosotros/#" className='dropOdd'>
+                        Advocación de la Virgen
                     </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown  className='mx-2 fw-bold dropItem' title="MISAS">
