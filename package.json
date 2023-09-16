@@ -23,7 +23,7 @@
   },
   "reactSnap": {
     "inlineCss": true,
-    "include": ["/sacramentos", "/misas"]
+    "include": ["/sacramentos", "/misas", "/nosotros"]
   },
   "eslintConfig": {
     "extends": [
