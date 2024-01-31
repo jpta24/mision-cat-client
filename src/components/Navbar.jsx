@@ -81,9 +81,9 @@ const Navbar2 = () => {
                     <NavDropdown.Item href="/nosotros/#proyectos" className='dropEven'>
                         Proyectos
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/nosotros/#" className='dropOdd'>
+                    {/* <NavDropdown.Item href="/nosotros/#" className='dropOdd'>
                         Advocación de la Virgen
-                    </NavDropdown.Item>
+                    </NavDropdown.Item> */}
                 </NavDropdown>
                 <NavDropdown  className='mx-2 fw-bold dropItem' title="MISAS">
                     <NavDropdown.Item href="/misas/#dominicales" className='drop1'>
