@@ -7,7 +7,7 @@ function Misas() {
   return (
     <div className='col10 '>
         <div className='mx-auto'>
-            <h1 className='my-4'>Misas en español</h1>
+            <h1 className='my-4 text-primary'>Misas en español</h1>
             <h3 className='px-5 col-10 mx-auto'>La tercera palabra del decálogo de la Iglesia Católica es:<strong>"Santificarás las fiestas ennombre de Dios."</strong> En esta palabra Dios nos encomienda horrarlo con obras de culto en losdías de fiesta.
             </h3>
         </div>

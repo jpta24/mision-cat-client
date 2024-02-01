@@ -5,7 +5,7 @@ function NosotrosPage() {
 	return (
 		<div className='col10'>
 			<div className='mx-auto' id='bienvenida'>
-				<h1 className='my-4'>BIENVENIDA</h1>
+				<h1 className='my-4 text-primary'>Bienvenida</h1>
 				<h3 className='px-5 col-10 mx-auto'>
 					Bienvenido a la Misión Católica de Lengua Española en Berlín. Si
 					deseas caminar en la Fe católica en Berlín y hablas español, este es
@@ -16,7 +16,7 @@ function NosotrosPage() {
 			</div>
 			<hr className='col-10 mx-auto' />
 			<div id='mision'>
-				<h2 className='fw-bold mt-5'>LA MISIÓN</h2>
+				<h2 className='fw-bold mt-5 text-primary'>La Misión</h2>
 				<p className='h3 col-10 mx-auto text-start'>
 					Venimos de más de 20 países diferentes. Nos unen la Fe y la lengua.
 					Caminamos en Cristo y acogemos en el campo de la Fe a todos aquellos
@@ -26,7 +26,7 @@ function NosotrosPage() {
 			</div>
 			<hr className='col-10 mx-auto' />
 			<div id='laFe'>
-				<h2 className='fw-bold mt-5'>DONDE EMPIEZA EL ESPACIO DE LA FE</h2>
+				<h2 className='fw-bold mt-5 text-primary'>Donde Empieza el Espacio de la Fé</h2>
 				<p className='h3 col-10 mx-auto text-start'>
 					En la arquidiócesis de Berlín viven muchos católicos con ciudadanía
 					extranjera a los que el Arzobispado atiende en su lengua materna y
@@ -55,7 +55,7 @@ function NosotrosPage() {
 			</div>
 			<hr className='col-10 mx-auto' />
 			<div id='historia'>
-				<h2 className='fw-bold mt-5'>HISTORIA</h2>
+				<h2 className='fw-bold mt-5 text-primary'>Historia</h2>
 				<h3 className='text-start col-10 mx-auto text-primary'>
 					Fundación de la Misión:
 				</h3>
@@ -90,7 +90,7 @@ function NosotrosPage() {
 			</div>
 			<hr className='col-10 mx-auto' />
 			<div id='sacerdotes'>
-				<h2 className='fw-bold mt-5'>SACERDOTES</h2>
+				<h2 className='fw-bold mt-5 text-primary'>Sacerdotes</h2>
 				<ul className='h3 col-10 mx-auto text-start'>
 					<li className='d-flex flex-column my-2'>
 						<span>
@@ -148,7 +148,7 @@ function NosotrosPage() {
 			</div>
 			<hr className='col-10 mx-auto' />
 			<div id='eventos'>
-				<h2 className='fw-bold mt-5'>EVENTOS</h2>
+				<h2 className='fw-bold mt-5 text-primary'>Eventos</h2>
 				<p className='h3 col-8 mx-auto text-start'>
 					"Las festividades y celebraciones fueron dadas por revelación para
 					elevar el espíritu, así como para descansar el cuerpo. De la misma
@@ -156,12 +156,12 @@ function NosotrosPage() {
 					celebraciones también se hacían teniendo en mente a Cristo".
 				</p>
 				<h3 className='text-start col-10 mx-auto text-primary pt-2'>
-					En nuestra Misión las fiestas principales en el ano son:
+					En nuestra Misión las fiestas principales en el año son:
 				</h3>
 				<ul className='h3 col-10 mx-auto text-start'>
 					<li className='d-flex flex-column my-4'>
 						<span>
-							<strong>- FIESTA DEL CORPUS CHRISTI</strong>
+							<strong>- Fiesta del Corpus Christi</strong>
 						</span>
 						<span className='ms-4'>
 							Corpus Christi, en latín Cuerpo de Cristo, es la fiesta en la que
@@ -182,7 +182,7 @@ function NosotrosPage() {
 					<li className='d-flex flex-column my-4'>
 						<span>
 							<strong>
-								- FIESTA DE LA VIRGEN DEL PILAR (ADVOCACION MARIANA){' '}
+								- Fiesta de la Virgen del Pilar (Advocación Mariana){' '}
 							</strong>
 						</span>
 						<span className='ms-4'>
@@ -213,7 +213,7 @@ function NosotrosPage() {
 					</li>
 					<li className='d-flex flex-column my-4'>
 						<span>
-							<strong>- FIESTA DE VERANO</strong>
+							<strong>- Fiesta de Verano</strong>
 						</span>
 						<span className='ms-4'>
 							Si por algo se conoce a las culturas iberoamericanas es por su
@@ -232,7 +232,7 @@ function NosotrosPage() {
 			</div>
 			<hr className='col-10 mx-auto' />
 			<div id='proyectos'>
-				<h2 className='fw-bold mt-5'>PROYECTOS</h2>
+				<h2 className='fw-bold mt-5 text-primary'>Proyectos</h2>
 				<p className='h3 col-10 mx-auto text-start'>
 					Las obras de misericordia son acciones caritativas mediante las cuales
 					ayudamos a nuestro prójimo en sus necesidades corporales y
@@ -254,8 +254,7 @@ function NosotrosPage() {
 				</p>
 
 				<h3 className='text-start col-10 mx-auto text-primary pt-2'>
-					ACTUALMENTE, LOS FIELES DE NUESTRA MISION APOYAN LOS SIGUIENTES
-					PROGRAMAS:
+					Actualemente, los fieles de nuestra misión apoyan los siguientes programas: 
 				</h3>
 				<ul className='h3 col-10 mx-auto text-start'>
 					<li className='d-flex flex-column'>
@@ -288,7 +287,7 @@ function NosotrosPage() {
 				</p>
 				<hr />
 				<div>
-					<h2 className='fw-bold mt-5'>VENEZUELA</h2>
+					<h2 className='fw-bold mt-5 text-primary'>VENEZUELA</h2>
 					<h3 className='fw-bold mt-2'>Ollas Solidarias en Venezuela</h3>
 					<p className='h3 col-10 mx-auto text-start pt-4'>
 						La olla solidaria se ha convertido en una ayuda valiosa ante la
@@ -339,7 +338,7 @@ function NosotrosPage() {
 				</div>
 				<hr />
 				<div>
-					<h2 className='fw-bold mt-5'>CUBA</h2>
+					<h2 className='fw-bold mt-5 text-primary'>CUBA</h2>
 					<h3 className='fw-bold mt-2'>Ayuda en Cuba</h3>
 					<p className='h3 col-10 mx-auto text-start pt-4'>
 						La Misión Católica en Berlín ayudan a los cubanos en plena crisis
@@ -375,7 +374,7 @@ function NosotrosPage() {
 				</div>
 				<hr />
 				<div>
-					<h2 className='fw-bold mt-5'>PERU</h2>
+					<h2 className='fw-bold mt-5 text-primary'>PERU</h2>
 					<h3 className='fw-bold mt-2'>
 						Ayuda en Perú: Hogarcito de Niños Especiales San José Benito
 						Cottolengos
