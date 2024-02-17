@@ -47,7 +47,7 @@ function Sacramentos() {
         <hr/>
         <div id='comunion'>
             <h2 className='fw-bold mt-5 text-primary'>La Primera Comunión</h2>
-            <h3 className='fw-bold'>(Sacramento de la Eucaristía, la Penitencia o Reconciliación)</h3>
+            <h3 className='fw-bold'>(Sacramento de Penitencia)</h3>
             <div className='d-flex flex-row justify-content-around my-5 mx-auto col-10'>
                 <div className='mx-3'>
                     <img src="https://www.mision-catolica-berlin.de/eventos/caacupe.jpg" alt="Descripción de la imagen" width="350"/>
