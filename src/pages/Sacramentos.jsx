@@ -29,7 +29,7 @@ function Sacramentos() {
 						<img
 							src='/assets/fotos/mkssb10.jpg'
 							alt='Descripción de la imagen'
-							width='400'
+							className='col-12'
 						/>
 					</div>
 					<div className='text-start col-6 px-2 h4'>
@@ -102,11 +102,11 @@ function Sacramentos() {
 				</h2>
 				<h3 className='fw-bold'>(Sacramento de Penitencia)</h3>
 				<div className='d-flex flex-row justify-content-around mx-auto col-10'>
-					<div className='mx-3'>
+					<div className='mx-3 col-4'>
 						<img
 							src='/assets/fotos/mkssb11.jpg'
 							alt='Descripción de la imagen'
-							width='300'
+							className='col-12'
 						/>
 					</div>
 					<div className='col-8'>
@@ -164,7 +164,7 @@ function Sacramentos() {
 						<img
 							src='/assets/fotos/mkssb12.jpg'
 							alt='Descripción de la imagen'
-							width='400'
+							className='col-12'
 						/>
 					</div>
 					<div className='text-start col-6 px-2 h4'>

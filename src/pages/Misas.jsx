@@ -19,7 +19,7 @@ function Misas() {
 			</div>
 			<div className='d-flex flex-row justify-content-center m-5'>
 				<div className='me-5'>
-					<img src='/assets/fotos/mkssb9.jpg' width='350' />
+					<img src='/assets/fotos/mkssb9.jpg' width='350' alt=''/>
 				</div>
 				<div className='text-start ms-5 px-5 pt-3 border border-dark h4'>
 					<p>Iglesia de St. Nikolaus.</p>
