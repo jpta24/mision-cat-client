@@ -83,6 +83,10 @@ const Navbar2 = () => {
 					<Nav
 						className={`d-flex justify-content-around mb-1 col-12 ${dNav()}`}
 					>
+						<div className='mx-2 fw-bold dropItem nav-item'>
+							<Nav.Link href='#home'>INICIO</Nav.Link>
+						</div>
+
 						<NavDropdown
 							className='mx-2 fw-bold dropItem'
 							title='NOSOTROS'
@@ -267,7 +271,10 @@ const Navbar2 = () => {
 								Talleres
 							</NavDropdown.Item>
 						</NavDropdown>
-						<NavDropdown className='mx-2 fw-bold dropItem' title='CONTACTOS'>
+						<NavDropdown
+							className='mx-2 fw-bold dropItem'
+							title='CONTACTOS'
+						>
 							<NavDropdown.Item href='#action3' className='drop1'>
 								Párroco
 							</NavDropdown.Item>
@@ -356,8 +363,7 @@ const Navbar2 = () => {
 						<br />
 						-Durante su estadía en la iglesia es recomendado el uso
 						de propia mascarilla que le cubra la nariz y la boca!{' '}
-						<br />
-						- No habrá nuevas inscripciones a la entrada de la
+						<br />- No habrá nuevas inscripciones a la entrada de la
 						Iglesia y no habrá la transmisión por internet via zoom.{' '}
 						<br />
 						-Las cestas para la colecta estarán a la salida de la
@@ -369,9 +375,8 @@ const Navbar2 = () => {
 						ponerse en contacto con la secretaria y de hacerlas
 						telefónicamente en horario de oficina miércoles y
 						viernes de 10:30 hasta las 14:30 horas o por email:
-						info@mision-catolica-berlin.de <br />
-						- Le pedimos por favor de no pasar por la sacristía.{' '}
-						<br />
+						info@mision-catolica-berlin.de <br />- Le pedimos por
+						favor de no pasar por la sacristía. <br />
 						- Solo se puede usar el baño de la sacristía entrando
 						por fuera de la iglesia. Por favor utilice los
 						desinfectantes antes y después de su uso. ¡Gracias!
