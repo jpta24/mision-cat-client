@@ -93,7 +93,7 @@ function NosotrosPage() {
 				<div className='d-flex flex-row justify-content-center m-5 -col-11 mx-auto'>
 					<div className='col-4 py-3'>
 						<img
-							src='/assets/fotos/mkssb3.jpg'
+							src='/assets/fotos/fundacion_de_la_mision.jpg'
 							alt='Descripción de la imagen'
 							width='400'
 						/>
@@ -245,8 +245,7 @@ function NosotrosPage() {
 							religión católica, que se celebra 60 días después
 							del domingo siguiente al Domingo de Resurrección, el
 							jueves siguiente a la solemnidad de la Santísima
-							Trinidad. En 2023, celebraremos Corpus Christi el
-							día 8 de junio.
+							Trinidad.
 						</span>
 					</li>
 					<li className='d-flex flex-column my-4'>
@@ -294,8 +293,7 @@ function NosotrosPage() {
 							especial cariño esta festividad, con la misa solemne
 							y la tradicional procesión, acompañadas por muestras
 							folclóricas de devoción y fraternidad entre las
-							nacionalidades. En 2023, celebramos La Virgen del
-							Pilar el día domingo 15 de octubre.
+							nacionalidades.
 						</span>
 					</li>
 					<li className='d-flex flex-column my-4'>
@@ -322,10 +320,10 @@ function NosotrosPage() {
 								la alegría de la confraternización.
 							</span>
 						</div>
-						<span>
+						{/* <span>
 							¡Únete a nosotros! En 2023, celebramos la FIESTA DE
 							VERANO el día *******.
-						</span>
+						</span> */}
 					</li>
 				</ul>
 			</div>
@@ -375,8 +373,8 @@ function NosotrosPage() {
 					<br />
 					Para sus donaciones: Cuenta bancaria (Bankverbindung):
 					<br />
-					Spanische Kath. Mission, Postbank,
-					<br /> IBAN: DE07 1001 0010 0007 3441 02 <br />
+					Spanische Kath. Mission,
+					<br /> Pax-Bank DE87 3706 0193 6002 4830 07 <br />
 					<br />
 					En Asunto, escriba el nombre del proyecto que desea apoyar.
 					<br />
@@ -460,22 +458,32 @@ function NosotrosPage() {
 				<div>
 					<h2 className='fw-bold mt-5 text-primary'>CUBA</h2>
 					<h3 className='fw-bold mt-2'>Ayuda en Cuba</h3>
-					<p className='h3 col-10 mx-auto text-start pt-4'>
-						La Misión Católica en Berlín ayudan a los cubanos en
-						plena crisis económica y cuando escasean alimentos,
-						medicamentos y otros muchos productos de primera
-						necesidad.
-						<br />
-						<br />
-						Las parroquias a las que ayúdanos son:
-						<br />
-						1. Parroquia del Carmen en Matanzas
-						<br />
-						2. Parroquia en Santiago de Cuba
-						<br />
-						3. Parroquia Santa María del Rosario. Habana
-						<br />
-					</p>
+					<div className='d-flex flex-row justify-content-center col-9 mx-auto'>
+						<div className='col-4 py-3'>
+							<img
+								src='/assets/fotos/proyecto_en_cuba.jpg'
+								alt='Descripción de la imagen'
+								width='350'
+							/>
+						</div>
+						<p className='h3 col-10 mx-auto text-start pt-4'>
+							La Misión Católica en Berlín ayudan a los cubanos en
+							plena crisis económica y cuando escasean alimentos,
+							medicamentos y otros muchos productos de primera
+							necesidad.
+							<br />
+							<br />
+							Las parroquias a las que ayúdanos son:
+							<br />
+							1. Parroquia del Carmen en Matanzas
+							<br />
+							2. Parroquia en Santiago de Cuba
+							<br />
+							3. Parroquia Santa María del Rosario. Habana
+							<br />
+						</p>
+					</div>
+
 					{/* <div className='d-flex flex-row justify-content-around my-5 mx-auto col-10'>
 						<div className='me-5'>
 							<img

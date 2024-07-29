@@ -1,7 +1,28 @@
-import React from 'react';
-import { Button } from 'react-bootstrap';
+import React, {useState} from 'react';
+import axios from 'axios';
+import { Modal, Button } from 'react-bootstrap';
 
 function Formulario() {
+	const initialState = {
+		nombre: '',
+		correo: '',
+		intenciones: '',
+	};
+	const [message, setMessage] = useState(initialState);
+	const [showModal, setShowModal] = useState(false)
+
+	const postAPI = async () => {
+		try {
+			await axios.post(
+				`https://pink-clumsy-gosling.cyclic.app/mails/webcatmessage`,
+				message
+			);
+			setShowModal(true)
+		} catch (error) {
+			console.error(error)
+		}
+	};
+
 	return (
 		<form className='col-8 mx-auto h5'>
 			<div>
@@ -14,6 +35,12 @@ function Formulario() {
 					name='nombre'
 					required
 					className='col-8 my-1'
+					onChange={(e) => {
+							setMessage({
+								...message,
+								[e.target.name]: e.target.value,
+							});
+						}}
 				/>
 			</div>
 			<div>
@@ -26,6 +53,12 @@ function Formulario() {
 					name='correo'
 					required
 					className='col-8 my-1'
+					onChange={(e) => {
+							setMessage({
+								...message,
+								[e.target.name]: e.target.value,
+							});
+						}}
 				/>
 			</div>
 			{/* <div>
@@ -51,6 +84,12 @@ function Formulario() {
 					rows='3'
 					required
 					className='col-8 my-1'
+					onChange={(e) => {
+							setMessage({
+								...message,
+								[e.target.name]: e.target.value,
+							});
+						}}
 				></textarea>
 			</div>
 			<div className='d-flex'>
@@ -59,11 +98,30 @@ function Formulario() {
 					<Button
 						variant='primary'
 						className='mx-2 avisos col-6 my-2'
+						onClick={postAPI}
 					>
 						Enviar Intención
 					</Button>
 				</div>
 			</div>
+			<Modal
+					show={showModal}
+					onHide={() => setShowModal(false)}
+					backdrop='static'
+					keyboard={false}
+				>
+					<Modal.Header closeButton>
+						<Modal.Title>Intenciones Enviadas</Modal.Title>
+					</Modal.Header>
+					<Modal.Body>
+						Muchas gracias, su intenciones han sido recibidas en nuestro correos, serán revisadas e incluidas en la próxima misa.
+					</Modal.Body>
+					<Modal.Footer>
+						<Button variant='secondary' onClick={() => setShowModal(false)}>
+							Cerrar
+						</Button>
+					</Modal.Footer>
+				</Modal>
 		</form>
 	);
 }

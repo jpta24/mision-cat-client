@@ -43,7 +43,7 @@ const Navbar2 = () => {
 						<Link to={'/'}>
 							<img
 								className='mx-2'
-								src='https://res.cloudinary.com/dwtnqtdcs/image/upload/v1677147805/virgenDelPilar_fs1a8w.png'
+								src='/virgen_del_pilar_logo.png'
 								width='60px'
 								alt='altLogo'
 							/>
@@ -55,7 +55,7 @@ const Navbar2 = () => {
 					) : (
 						<Link to={'/'}>
 							<img
-								src='https://res.cloudinary.com/dwtnqtdcs/image/upload/v1677147805/virgenDelPilar_fs1a8w.png'
+								src='/virgen_del_pilar_logo.png'
 								className={`${
 									window.innerWidth > 450 && 'navImg'
 								} ${
@@ -205,96 +205,81 @@ const Navbar2 = () => {
 							className='mx-2 fw-bold dropItem'
 							title='PASTORAL'
 						>
-							<NavDropdown.Item href='#action3' className='drop1'>
+							<NavDropdown.Item
+								href='/pastoral/#pastoral'
+								className='drop1'
+							>
+								Servicios Pastorales
+							</NavDropdown.Item>
+							<NavDropdown.Item
+								href='/pastoral/#servicios'
+								className='dropOdd'
+							>
+								La Pastoral
+							</NavDropdown.Item>
+							<NavDropdown.Item
+								href='/pastoral/#consejo'
+								className='dropEven'
+							>
 								Consejo Pastoral
 							</NavDropdown.Item>
 							<NavDropdown.Item
-								href='#action4'
+								href='/pastoral/#grupos'
 								className='dropOdd'
 							>
-								Lectores
-							</NavDropdown.Item>
-							<NavDropdown.Item
-								href='#action4'
-								className='dropEven'
-							>
-								Monaguillos
-							</NavDropdown.Item>
-							<NavDropdown.Item
-								href='#action4'
-								className='dropOdd'
-							>
-								Catequistas
-							</NavDropdown.Item>
-							<NavDropdown.Item
-								href='#action4'
-								className='dropEven'
-							>
-								Coro
-							</NavDropdown.Item>
-							<NavDropdown.Item
-								href='#action4'
-								className='dropOdd'
-							>
-								Grupo Técnico
-							</NavDropdown.Item>
-							<NavDropdown.Item
-								href='#action4'
-								className='dropEven'
-							>
-								Grupo de Cocina
-							</NavDropdown.Item>
-							<NavDropdown.Item
-								href='#action4'
-								className='dropOdd'
-							>
-								Otros Gremios
+								Grupos
 							</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown
 							className='mx-2 fw-bold dropItem'
-							title='ASOCIACIÓN AMCLEB'
+							title='ASOCIACIÓN FKMSSB'
 						>
-							<NavDropdown.Item href='#action3' className='drop1'>
-								Estatutos
+							<NavDropdown.Item
+								href='/asociacion/#verein'
+								className='drop1'
+							>
+								La Asociacion
 							</NavDropdown.Item>
 							<NavDropdown.Item
-								href='#action4'
+								href='/asociacion/#estatutos'
 								className='dropOdd'
 							>
-								Proyectos
+								Estatútos
 							</NavDropdown.Item>
 							<NavDropdown.Item
-								href='#action4'
+								href='/asociacion/#datos'
 								className='dropEven'
 							>
-								Talleres
+								Protección de datos
+							</NavDropdown.Item>
+							<NavDropdown.Item
+								href='/asociacion/#donaciones'
+								className='dropOdd'
+							>
+								Donaciones
 							</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown
 							className='mx-2 fw-bold dropItem'
 							title='CONTACTOS'
 						>
-							<NavDropdown.Item href='#action3' className='drop1'>
-								Párroco
-							</NavDropdown.Item>
 							<NavDropdown.Item
-								href='#action4'
-								className='dropOdd'
+								href='/contacto/#contacto'
+								className='drop1'
 							>
-								Horarios de Oficina
+								Contacto
 							</NavDropdown.Item>
 							<NavDropdown.Item
-								href='#action4'
-								className='dropEven'
-							>
-								La Delegación
-							</NavDropdown.Item>
-							<NavDropdown.Item
-								href='#action4'
+								href='/contacto/#donaciones'
 								className='dropOdd'
 							>
 								Donaciones
+							</NavDropdown.Item>
+							<NavDropdown.Item
+								href='/contacto/#formularios'
+								className='dropEven'
+							>
+								Formularios
 							</NavDropdown.Item>
 							{/* <NavDropdown.Item
 								href='#action4'

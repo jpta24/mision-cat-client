@@ -140,7 +140,7 @@ function Sacramentos() {
 						Véase Formulario de inscripción a la catequesis de la
 						primera comunión.{' '}
 						<a
-							href='/primera-comunion-formulario.pdf'
+							href='/Formulario-Comunion-2024.pdf'
 							download='primera-comunion-formulario.pdf'
 						>
 							(Abrir documento PDF)
@@ -191,10 +191,12 @@ function Sacramentos() {
 						</a>
 					</p>
 					<h3 className='text-center text-primary'>Requisitos:</h3>
-					{/* <h5>NIÑO / NIÑA</h5>
-                <ul>
-                    <li>Para niños a partir de 9 años o que estén cursando la 3era. Clase de la escuela primaria.</li>
-                </ul> */}
+					<h5>NIÑO / NIÑA</h5>
+					<ul>
+						<li>
+							Para niños a partir de 14 años.
+						</li>
+					</ul>
 				</div>
 			</div>
 			<hr />
